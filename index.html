@@ -1,354 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head> 
-    <!-- Basic page information -->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Abdul Hakim Kimera — Web designer and developer creating modern websites for businesses.">
-    <meta name="author" content="Abdul Hakim Kimera">
 
-    <title>Abdul Hakim Kimera — Web Designer & Developer</title> 
-    
-    <!-- Google Font -->
+    <title>Hakim — Web Designer & Developer</title>
+    <meta name="description" content="Hakim builds modern, responsive websites for businesses and personal brands.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-   
-    <!-- Main stylesheet -->
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body> 
-    
-    <!-- ========================= NAVIGATION ========================== -->
-    <header class="navbar">
+<body>
 
-        <div class="container nav-container"> <a href="#home" class="logo"> HAKIM<span>🟢</span>WEBSITES </a>
-            <nav class="nav-links"> <a href="#home">Home</a> <a href="#about">About</a> <a href="#services">Services</a>
-                <a href="#projects">Projects</a> <a href="#values">What I Value</a> <a href="#skills">Skills</a> <a href="#process">Process</a> <a href="#contact">Contact</a> </nav> <a
-                href="#contact" class="nav-button"> Let's Talk </a> <button class="menu-button"
-                aria-label="Open navigation menu"> ☰ </button>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                Hakim<span> Web</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#work">Work</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#contact" class="nav-button">
+                Let's talk
+            </a>
+
+            <button class="menu-button" id="menuButton" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
-    </header> 
-    
-    <!-- ========================= MAIN CONTENT ========================== -->
-    <main> 
-        
-        <!-- ========================= HERO ========================== -->
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
         <section class="hero" id="home">
 
-            <div class="hero-glow"></div>
             <div class="container hero-container">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    Available for freelance work
+                </div>
+
                 <div class="hero-content">
-                    <div class="availability"> <span class="availability-dot"></span> Available for new projects </div>
-                    <p class="hero-small-title"> WEB DESIGNER & DEVELOPER </p>
-                    <h1> I build websites <span>businesses</span> can grow with </h1>
-                    <p class="hero-description"> I'm Abdul Hakim Kimera, a web designer and developer focused on
-                        creating modern, responsive and professional websites for businesses and personal brands. </p>
-                    <div class="hero-buttons"> <a href="#projects" class="primary-button"> View My Work <span>→</span>
-                        </a> <a href="#contact" class="secondary-button"> Let's Work Together </a> </div>
-                    <div class="hero-stats">
-                        <div class="stat"> <strong>01</strong> <span> Strategy </span> </div>
-                        <div class="stat"> <strong>02</strong> <span> Design </span> </div>
-                        <div class="stat"> <strong>03</strong> <span> Development </span> </div>
-                    </div>
-                </div> 
-                
-                <!-- HERO VISUAL -->
-                <div class="hero-visual">
 
-                    <div class="profile-card">
-                        <div class="profile-card-top"> <span> HAKIM WEBSITES </span> <span class="profile-status">
-                                ONLINE </span> </div>
-                        <div class="profile-symbol"> H </div>
-                        <div class="profile-info">
-                            <p> ABDUL HAKIM KIMERA </p>
-                            <h2> Digital experiences <span>that matter</span> </h2>
-                        </div>
-                        <div class="profile-card-bottom"> <span> WEB / BRAND / DIGITAL </span> <span> 2026 </span>
+                    <div class="hero-text">
+                        <p class="eyebrow">WEB DESIGNER & DEVELOPER</p>
+
+                        <h1>
+                            I build websites
+                            <span>people remember</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            I design and build clean, modern websites for businesses
+                            that want to look professional, earn trust, and get more
+                            customers online.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#work" class="button button-primary">
+                                View my work
+                            </a>
+
+                            <a href="#contact" class="button button-secondary">
+                                Start a project
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section> 
-        
-        <!-- ========================= ABOUT ========================== -->
-        <section class="about section" id="about">
 
-            <div class="container about-grid">
-                <div class="section-introduction"> <span class="section-label"> ABOUT ME </span>
-                    <h2> Turning ideas into <span>useful digital experiences</span> </h2>
-                </div>
-                <div class="about-content">
-                    <p> I'm Abdul Hakim Kimera, the person behind Hakim Websites. I design and develop websites with a
-                        focus on clean interfaces, responsive layouts and clear communication. </p>
-                    <p> My goal is simple: create websites that don't just look good, but help businesses communicate
-                        their value and make it easier for customers to take action. </p>
-                    <div class="about-details">
-                        <div> <strong> Based in </strong> <span> Dubai, UAE </span> </div>
-                        <div> <strong> Focus </strong> <span> Business Websites </span> </div>
-                        <div> <strong> Approach </strong> <span> Design + Development </span> </div>
+                    <div class="hero-side">
+                        <p>
+                            Based in Dubai<br>
+                            Working worldwide
+                        </p>
+
+                        <div class="scroll-indicator">
+                            <span></span>
+                            Scroll to explore
+                        </div>
                     </div>
+
                 </div>
+
             </div>
-        </section> 
-        
-        <!-- ========================= SERVICES ========================== -->
+
+        </section>
+
+
+        <!-- SERVICES -->
         <section class="services section" id="services">
 
             <div class="container">
+
                 <div class="section-heading">
-                    <div> <span class="section-label"> SERVICES </span>
-                        <h2> What I can <span>build for you</span> </h2>
+                    <div>
+                        <p class="eyebrow">WHAT I DO</p>
+                        <h2>Websites built<br>with purpose</h2>
                     </div>
-                    <p> Practical digital solutions designed around your business goals. </p>
+
+                    <p class="section-intro">
+                        No unnecessary complexity. Just thoughtful design,
+                        clean development, and a website that works for your business.
+                    </p>
                 </div>
+
 
                 <div class="services-grid">
 
-                    <article class="service-card"> <span class="service-number"> 01 </span>
-                        <div class="service-icon"> ◇ </div>
-                        <h3> Business Websites </h3>
-                        <p> Professional websites designed to establish credibility and help businesses attract and
-                            convert customers. </p> <a href="#contact"> Discuss a project → </a>
-                    </article>
-                    <article class="service-card"> <span class="service-number"> 02 </span>
-                        <div class="service-icon"> ✦ </div>
-                        <h3> Landing Pages </h3>
-                        <p> Focused landing pages built around a specific product, service, campaign or business
-                            objective. </p> <a href="#contact"> Discuss a project → </a>
+                    <article class="service-card">
+                        <span class="service-number">01</span>
+
+                        <h3>Business Websites</h3>
+
+                        <p>
+                            Professional websites that make your business
+                            look trustworthy and give customers a clear reason
+                            to contact you.
+                        </p>
+
+                        <span class="service-link">Explore service →</span>
                     </article>
 
-                    <article class="service-card"> <span class="service-number"> 03 </span>
-                        <div class="service-icon"> ↗ </div>
-                        <h3> Website Redesign </h3>
-                        <p> Modernizing outdated websites with cleaner design, better usability and responsive layouts.
-                        </p> <a href="#contact"> Discuss a project → </a>
+
+                    <article class="service-card">
+                        <span class="service-number">02</span>
+
+                        <h3>Landing Pages</h3>
+
+                        <p>
+                            Focused landing pages designed around one goal:
+                            getting visitors to take action.
+                        </p>
+
+                        <span class="service-link">Explore service →</span>
                     </article>
+
+
+                    <article class="service-card">
+                        <span class="service-number">03</span>
+
+                        <h3>Website Redesigns</h3>
+
+                        <p>
+                            Turn an outdated website into a cleaner,
+                            faster and more professional experience.
+                        </p>
+
+                        <span class="service-link">Explore service →</span>
+                    </article>
+
+
+                    <article class="service-card">
+                        <span class="service-number">04</span>
+
+                        <h3>Framer Websites</h3>
+
+                        <p>
+                            Modern Framer websites with smooth interactions,
+                            responsive layouts and an easy editing experience.
+                        </p>
+
+                        <span class="service-link">Explore service →</span>
+                    </article>
+
                 </div>
+
             </div>
-        </section> 
-        
-        <!-- ========================= PROJECTS ========================== -->
-        <section class="projects section" id="projects">
 
-            <div class="container">
-                <div class="section-heading">
-                    <div> <span class="section-label"> SELECTED WORK </span>
-                        <h2> Projects I've <span>worked on</span> </h2>
-                    </div>
-                    <p> A selection of digital projects built to explore design, development and business-focused
-                        experiences. </p>
-                </div>
-                <div class="projects-grid"> 
-                    
-                    <!-- PROJECT 1 -->
-                    <article class="project-card">
-
-                        <div class="project-image project-fitforge"> <span> FITNESS </span>
-                            <div class="project-logo"> FITFORGE </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-meta"> <span> 01 / WEBSITE </span> <span> 2026 </span> </div>
-                            <h3> FitForge </h3>
-                            <p> A modern fitness-focused website concept designed around training, motivation and a
-                                strong visual identity. </p> <a href="#"> View project → </a>
-                        </div>
-                    </article> 
-                    
-                    <!-- PROJECT 2 -->
-                    <article class="project-card">
-
-                        <div class="project-image project-restaurant"> <span> HOSPITALITY </span>
-                            <div class="project-logo"> LA BELLA RESTAURANT </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-meta"> <span> 02 / WEBSITE </span> <span> 2026 </span> </div>
-                            <h3> La Bella Restaurant</h3>
-                            <p> A hospitality website concept focused on presenting the restaurant, menu, atmosphere and
-                                customer experience. </p> <a href="https://hakimwebsites.github.io/la-bella-restaurant/" target="_blank" rel="noopener"> View project → </a>
-                        </div>
-                    </article> 
-                    
-                    <!-- PROJECT 3 -->
-                    <article class="project-card">
-
-                        <div class="project-image project-nexora"> <span> DIGITAL </span>
-                            <div class="project-logo"> NEXORA </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-meta"> <span> 03 / WEBSITE </span> <span> 2026 </span> </div>
-                            <h3> Nexora </h3>
-                            <p> A professional digital business website designed to present services and generate new
-                                client enquiries. </p> <a href="#"> View project → </a>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section> 
-
-          <!-- TESTIMONIALS -->
-         <section class="testimonials section" id="values">
-
-    <div class="section-heading">
-    <div>
-        <span class="section-label">WHAT I VALUE</span>
-        <h2>Building websites that <span>actually matter.</span></h2>
-    </div>
-
-    <p>
-        My goal is not just to make websites look good.
-        I focus on creating digital experiences that are clear,
-        responsive, and useful for real businesses.
-    </p>
-    </div>
-
-    <div class="testimonial-grid">
-
-    <div class="testimonial-card">
-        <div class="client-avatar">01</div>
-
-        <div class="quote">
-            Clean Design
-        </div>
-
-        <p class="client">
-            Every section should have a purpose, with a clean visual
-            hierarchy that makes the website easy to understand.
-        </p>
-       </div>
-
-      <div class="testimonial-card">
-        <div class="client-avatar">02</div>
-
-        <div class="quote">
-            Responsive Build
-        </div>
-
-        <p class="client">
-            Websites should look and work properly across phones,
-            tablets, laptops, and desktop screens.
-        </p>
-    </div>
-
-    <div class="testimonial-card">
-        <div class="client-avatar">03</div>
-
-        <div class="quote">
-            Business Focus
-        </div>
-
-        <p class="client">
-            A professional website should help a business build trust,
-            communicate clearly, and turn visitors into customers.
-        </p>
-    </div>
-
-</div>
-
-</section>
-        
-        <!-- ========================= SKILLS ========================== -->
-        <section class="skills section" id="skills">
-
-            <div class="container skills-grid">
-                <div> <span class="section-label"> TOOLKIT </span>
-                    <h2> Built with <span>modern tools</span> </h2>
-                </div>
-                <div class="skills-list">
-                    <div class="skill"> <span>HTML</span> <span>01</span> </div>
-                    <div class="skill"> <span>CSS</span> <span>02</span> </div>
-                    <div class="skill"> <span>JavaScript</span> <span>03</span> </div>
-                    <div class="skill"> <span>Responsive Design</span> <span>04</span> </div>
-                    <div class="skill"> <span>UI / UX</span> <span>05</span> </div>
-                    <div class="skill"> <span>Git & GitHub</span> <span>06</span> </div>
-                </div>
-            </div>
         </section>
-        
-        <!-- ========================= PROCESS ========================== -->
-        <section class="process section" id="process">
+
+
+        <!-- WORK -->
+        <section class="work section" id="work">
 
             <div class="container">
-                <div class="center-heading"> <span class="section-label"> MY PROCESS </span>
-                    <h2> From idea to <span>launch</span> </h2>
-                    <p> A simple process keeps projects organized and focused. </p>
+
+                <div class="section-heading work-heading">
+
+                    <div>
+                        <p class="eyebrow">SELECTED WORK</p>
+                        <h2>A few things<br>I've built</h2>
+                    </div>
+
+                    <p class="section-intro">
+                        A selection of websites and concepts showing how I
+                        approach design, structure and user experience.
+                    </p>
+
                 </div>
-                <div class="process-list">
-                    <div class="process-item"> <span> 01 </span>
-                        <div>
-                            <h3> Discover </h3>
-                            <p> Understand the business, audience, goals and requirements. </p>
+
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1 -->
+                    <article class="project project-large">
+
+                        <div class="project-image bella">
+                            <div class="project-browser">
+
+                                <div class="browser-top">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="bella-content">
+                                    <small>LA BELLA</small>
+                                    <h3>
+                                        Italian food.<br>
+                                        Made with love.
+                                    </h3>
+
+                                    <div class="fake-button">
+                                        View Menu
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
-                    <div class="process-item"> <span> 02 </span>
-                        <div>
-                            <h3> Design </h3>
-                            <p> Create the structure, visual direction and user experience. </p>
+
+                        <div class="project-info">
+                            <div>
+                                <p class="project-category">
+                                    Restaurant Website
+                                </p>
+
+                                <h3>La Bella Restaurant</h3>
+                            </div>
+
+                            <a href="https://hakimwebsites.github.io/la-bella-restaurant/"
+                               target="_blank"
+                               class="project-arrow">
+                                ↗
+                            </a>
                         </div>
-                    </div>
-                    <div class="process-item"> <span> 03 </span>
-                        <div>
-                            <h3> Develop </h3>
-                            <p> Turn the approved design into a responsive, functional website. </p>
+
+                    </article>
+
+
+                    <!-- PROJECT 2 -->
+                    <article class="project">
+
+                        <div class="project-image kampala">
+
+                            <div class="kampala-overlay">
+                                <p>KAMPALA HUB</p>
+
+                                <h3>
+                                    Good food.<br>
+                                    Good people.
+                                </h3>
+
+                                <span>Explore our menu →</span>
+                            </div>
+
                         </div>
-                    </div>
-                    <div class="process-item"> <span> 04 </span>
-                        <div>
-                            <h3> Launch </h3>
-                            <p> Test, optimize and prepare the website for the real world. </p>
+
+                        <div class="project-info">
+                            <div>
+                                <p class="project-category">
+                                    Restaurant Concept
+                                </p>
+
+                                <h3>Kampala Hub</h3>
+                            </div>
+
+                            <span class="project-status">
+                                Concept
+                            </span>
                         </div>
-                    </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 3 -->
+                    <article class="project">
+
+                        <div class="project-image fitforge">
+
+                            <div class="fitforge-content">
+
+                                <span>FITFORGE</span>
+
+                                <h3>
+                                    Train harder.<br>
+                                    Become stronger.
+                                </h3>
+
+                                <div class="fitness-lines">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="project-info">
+                            <div>
+                                <p class="project-category">
+                                    Fitness Website
+                                </p>
+
+                                <h3>FitForge</h3>
+                            </div>
+
+                            <span class="project-status">
+                                Concept
+                            </span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 4 -->
+                    <article class="project project-wide">
+
+                        <div class="project-image nexora">
+
+                            <div class="nexora-content">
+
+                                <p>NEXORA</p>
+
+                                <h3>
+                                    Technology<br>
+                                    made simple.
+                                </h3>
+
+                                <div class="nexora-boxes">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <div>
+                                <p class="project-category">
+                                    Business Website
+                                </p>
+
+                                <h3>Nexora</h3>
+                            </div>
+
+                            <span class="project-status">
+                                Concept
+                            </span>
+
+                        </div>
+
+                    </article>
+
                 </div>
+
+
+                <p class="project-note">
+                    Kampala Hub, FitForge and Nexora are concept projects
+                    created to demonstrate different website styles and industries.
+                </p>
+
             </div>
-        </section> 
-        
-        <!-- ========================= CONTACT ========================== -->
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+
+            <div class="container about-grid">
+
+                <div class="about-title">
+                    <p class="eyebrow">A LITTLE ABOUT ME</p>
+
+                    <h2>
+                        Good websites don't
+                        just look good
+                    </h2>
+                </div>
+
+
+                <div class="about-content">
+
+                    <p class="about-large">
+                        They make people trust you
+                    </p>
+
+                    <p>
+                        I'm Hakim, a web designer and developer focused on
+                        creating websites that are simple, clear and useful.
+                    </p>
+
+                    <p>
+                        I care about the small details — spacing, typography,
+                        mobile responsiveness, page speed and the way a visitor
+                        moves through a website.
+                    </p>
+
+                    <p>
+                        My goal isn't to build something that simply looks
+                        impressive. It's to build something that helps your
+                        business communicate better and turn visitors into customers.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Let's work together →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="skills section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">SKILLS</p>
+                        <h2>What I work with</h2>
+                    </div>
+                </div>
+
+
+                <div class="skills-list">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Framer</span>
+                    <span>Responsive Design</span>
+                    <span>UI/UX</span>
+                    <span>Git & GitHub</span>
+                    <span>Web Design</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROCESS -->
+        <section class="process section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">MY PROCESS</p>
+                        <h2>Simple from<br>start to finish</h2>
+                    </div>
+
+                    <p class="section-intro">
+                        A straightforward process keeps projects clear,
+                        efficient and focused on the result.
+                    </p>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <div class="process-item">
+                        <span>01</span>
+
+                        <h3>Brief</h3>
+
+                        <p>
+                            We discuss your business, goals, audience
+                            and what the website needs to achieve.
+                        </p>
+                    </div>
+
+
+                    <div class="process-item">
+                        <span>02</span>
+
+                        <h3>Design</h3>
+
+                        <p>
+                            I create the structure and visual direction
+                            around your brand and audience.
+                        </p>
+                    </div>
+
+
+                    <div class="process-item">
+                        <span>03</span>
+
+                        <h3>Build</h3>
+
+                        <p>
+                            The design becomes a responsive, functional
+                            website that works across devices.
+                        </p>
+                    </div>
+
+
+                    <div class="process-item">
+                        <span>04</span>
+
+                        <h3>Launch</h3>
+
+                        <p>
+                            After testing everything, your website is
+                            ready to go live.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
         <section class="contact section" id="contact">
 
             <div class="container">
+
                 <div class="contact-box">
-                    <div class="contact-content"> <span class="section-label"> START A PROJECT </span>
-                        <h2> Have an idea? <span>Let's build it</span> </h2>
-                        <p> Tell me what you're working on, what you need and what you'd like your website to achieve.
-                        </p> <a href="mailto:hakimwebsites.ug@gmail.com" class="primary-button"> Send an email <span>→</span> </a>
+
+                    <p class="eyebrow">HAVE A PROJECT?</p>
+
+                    <h2>
+                        Let's build something
+                        <span>worth remembering</span>
+                    </h2>
+
+                    <p class="contact-description">
+                        Tell me what you're working on and I'll get back
+                        to you with the next steps.
+                    </p>
+
+                    <div class="contact-buttons">
+
+                        <a href="https://wa.me/971558311047"
+                           target="_blank"
+                           class="button button-primary">
+                            Message me on WhatsApp
+                        </a>
+
+                        <a href="mailto:hakimwebsites.ug@gmail.com"
+                           class="button button-secondary">
+                            Send me an email
+                        </a>
+
                     </div>
-                    <div class="contact-decoration">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+
                 </div>
+
             </div>
+
         </section>
 
-    </main> 
-    <!-- ========================= FOOTER ========================== -->
+    </main>
+
+
+    <!-- FOOTER -->
     <footer class="footer">
 
-        <div class="container">
-            <div class="footer-top">
-                <div> <a href="#home" class="logo"> HAKIM<span>🟢</span>WEBSITES </a>
-                    <p> Web design and development for modern businesses. </p>
-                </div>
-                <div class="footer-links">
-                    <div>
-                        <h4> Navigation </h4> <a href="#home"> Home </a> <a href="#about"> About </a> <a
-                            href="#services"> Services </a> <a href="#projects"> Projects </a>
-                    </div>
-                    <div>
-                        <h4> Connect </h4> <a href="#contact"> Contact </a> <a href="#"> Instagram </a> <a href="#">
-                            LinkedIn </a> <a href="#"> GitHub </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom"> <span> © 2026 Abdul Hakim Kimera </span> <span> Hakim Websites </span> </div>
-        </div>
-    </footer> 
-    
-</body>
+        <div class="container footer-container">
 
+            <div>
+                <a href="#home" class="logo">
+                    Hakim<span> Web</span>
+                </a>
+
+                <p>
+                    Web designer & developer.
+                </p>
+            </div>
+
+            <div class="footer-right">
+
+                <p>
+                    © 2026 Abduk Hakim Kimera. All rights reserved.
+                </p>
+
+                <a href="#home">
+                    Back to top ↑
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
 </html>
