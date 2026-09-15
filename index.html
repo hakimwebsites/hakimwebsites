@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0c0d0d">
 
-    <title>Hakim Web Studio — Web Designer & Developer</title>
-    <meta name="description" content="Hakim builds modern, responsive websites for businesses and personal brands.">
+    <title>Hakim Web Studio | Websites for Businesses</title>
+    <meta name="description" content="Hakim Web Studio designs and builds modern, responsive websites for local businesses, restaurants, and service brands that need to look professional and make it easy for customers to get in touch.">
+    <meta name="author" content="Abdul Hakim Kimera">
+
+    <link rel="canonical" href="https://hakimwebsites.github.io/hakimwebsites/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hakimwebsites.github.io/hakimwebsites/">
+    <meta property="og:title" content="Hakim Web Studio | Websites for Businesses">
+    <meta property="og:description" content="Modern, responsive websites for businesses that want to look professional and make it easier for customers to get in touch.">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hakim Web Studio | Websites for Businesses">
+    <meta name="twitter:description" content="Modern, responsive websites for businesses that want to look professional and make it easier for customers to get in touch.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <a class="skip-link" href="#main">Skip to main content</a>
 
     <!-- NAVIGATION -->
     <header class="navbar">
@@ -25,7 +40,7 @@
                 Hakim<span> Web</span> Studio
             </a>
 
-            <nav class="nav-links" id="navLinks">
+            <nav class="nav-links" id="navLinks" aria-label="Primary">
                 <a href="#home">Home</a>
                 <a href="#work">Work</a>
                 <a href="#services">Services</a>
@@ -34,10 +49,17 @@
             </nav>
 
             <a href="#contact" class="nav-button">
-                Let's talk
+                Start a project
             </a>
 
-            <button class="menu-button" id="menuButton" aria-label="Open menu">
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+                aria-label="Open menu"
+                aria-controls="navLinks"
+                aria-expanded="false"
+            >
                 <span></span>
                 <span></span>
             </button>
@@ -46,41 +68,41 @@
     </header>
 
 
-    <main>
+    <main id="main">
 
         <!-- HERO -->
-        <section class="hero" id="home">
+        <section class="hero" id="home" aria-labelledby="hero-heading">
 
             <div class="container hero-container">
 
                 <div class="availability">
-                    <span class="status-dot"></span>
+                    <span class="status-dot" aria-hidden="true"></span>
                     Available for freelance work
                 </div>
 
                 <div class="hero-content">
 
                     <div class="hero-text">
-                        <p class="eyebrow">WEB DESIGNER & DEVELOPER</p>
+                        <p class="eyebrow">WEB DESIGNER &amp; DEVELOPER</p>
 
-                        <h1>
-                            I build websites
-                            <span>people remember</span>
+                        <h1 id="hero-heading">
+                            Modern websites that help businesses
+                            <span>look professional</span>
                         </h1>
 
                         <p class="hero-description">
-                            I design and build clean, modern websites for businesses
-                            that want to look professional, earn trust, and get more
-                            customers online.
+                            I design and build clean, responsive websites for local
+                            businesses that need to look credible, explain what they do,
+                            and make it easy for customers to get in touch.
                         </p>
 
                         <div class="hero-buttons">
-                            <a href="#work" class="button button-primary">
-                                View my work
+                            <a href="#contact" class="button button-primary">
+                                Start a Project
                             </a>
 
-                            <a href="#contact" class="button button-secondary">
-                                Start a project
+                            <a href="#work" class="button button-secondary">
+                                View My Work
                             </a>
                         </div>
                     </div>
@@ -91,7 +113,7 @@
                             Working worldwide
                         </p>
 
-                        <div class="scroll-indicator">
+                        <div class="scroll-indicator" aria-hidden="true">
                             <span></span>
                             Scroll to explore
                         </div>
@@ -105,19 +127,19 @@
 
 
         <!-- SERVICES -->
-        <section class="services section" id="services">
+        <section class="services section" id="services" aria-labelledby="services-heading">
 
             <div class="container">
 
                 <div class="section-heading">
                     <div>
                         <p class="eyebrow">WHAT I DO</p>
-                        <h2>Websites built<br>with purpose</h2>
+                        <h2 id="services-heading">Websites built<br>with purpose</h2>
                     </div>
 
                     <p class="section-intro">
-                        No unnecessary complexity. Just thoughtful design,
-                        clean development, and a website that works for your business.
+                        Clear design and practical development, focused on helping
+                        your business look professional and get more enquiries.
                     </p>
                 </div>
 
@@ -130,12 +152,13 @@
                         <h3>Business Websites</h3>
 
                         <p>
-                            Professional websites that make your business
-                            look trustworthy and give customers a clear reason
-                            to contact you.
+                            Professional responsive websites designed to help
+                            local businesses build trust and generate enquiries.
                         </p>
 
-                        <span class="service-link">Explore service →</span>
+                        <a href="#contact" class="service-link" data-project-type="New Business Website">
+                            Start this project
+                        </a>
                     </article>
 
 
@@ -145,11 +168,13 @@
                         <h3>Landing Pages</h3>
 
                         <p>
-                            Focused landing pages designed around one goal:
-                            getting visitors to take action.
+                            Focused landing pages designed around one clear action,
+                            such as booking, contacting, or requesting a quote.
                         </p>
 
-                        <span class="service-link">Explore service →</span>
+                        <a href="#contact" class="service-link" data-project-type="Landing Page">
+                            Start this project
+                        </a>
                     </article>
 
 
@@ -159,25 +184,45 @@
                         <h3>Website Redesigns</h3>
 
                         <p>
-                            Turn an outdated website into a cleaner,
-                            faster and more professional experience.
+                            Modernize an outdated website with better structure,
+                            mobile responsiveness, usability, and visual design.
                         </p>
 
-                        <span class="service-link">Explore service →</span>
+                        <a href="#contact" class="service-link" data-project-type="Website Redesign">
+                            Start this project
+                        </a>
                     </article>
 
 
                     <article class="service-card">
                         <span class="service-number">04</span>
 
-                        <h3>Framer Websites</h3>
+                        <h3>Restaurant Websites</h3>
 
                         <p>
-                            Modern Framer websites with smooth interactions,
-                            responsive layouts and an easy editing experience.
+                            Menu-led restaurant sites that show the atmosphere,
+                            make the food easy to explore, and invite bookings.
                         </p>
 
-                        <span class="service-link">Explore service →</span>
+                        <a href="#contact" class="service-link" data-project-type="Restaurant Website">
+                            Start this project
+                        </a>
+                    </article>
+
+
+                    <article class="service-card">
+                        <span class="service-number">05</span>
+
+                        <h3>Fitness &amp; Service Businesses</h3>
+
+                        <p>
+                            Clear websites for gyms, coaches, and service businesses
+                            that explain the offer and make contact simple.
+                        </p>
+
+                        <a href="#contact" class="service-link" data-project-type="Fitness Website">
+                            Start this project
+                        </a>
                     </article>
 
                 </div>
@@ -188,7 +233,7 @@
 
 
         <!-- WORK -->
-        <section class="work section" id="work">
+        <section class="work section" id="work" aria-labelledby="work-heading">
 
             <div class="container">
 
@@ -196,23 +241,32 @@
 
                     <div>
                         <p class="eyebrow">SELECTED WORK</p>
-                        <h2>A few things<br>I've built</h2>
+                        <h2 id="work-heading">A few things<br>I've built</h2>
                     </div>
 
                     <p class="section-intro">
-                        A selection of websites and concepts showing how I
-                        approach design, structure and user experience.
+                        A mix of a live demo and concept projects showing how I
+                        approach design, structure, and user experience.
                     </p>
 
                 </div>
 
 
-                <div class="projects-grid">
+                <div class="project-filters" role="group" aria-label="Filter projects by type">
+                    <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" class="filter-button" data-filter="business" aria-pressed="false">Business</button>
+                    <button type="button" class="filter-button" data-filter="restaurant" aria-pressed="false">Restaurant</button>
+                    <button type="button" class="filter-button" data-filter="fitness" aria-pressed="false">Fitness</button>
+                    <button type="button" class="filter-button" data-filter="landing" aria-pressed="false">Landing Page</button>
+                </div>
+
+
+                <div class="projects-grid" id="projectsGrid">
 
                     <!-- PROJECT 1 -->
-                    <article class="project project-large">
+                    <article class="project project-large" data-category="restaurant">
 
-                        <div class="project-image bella">
+                        <div class="project-image bella" aria-hidden="true">
                             <div class="project-browser">
 
                                 <div class="browser-top">
@@ -223,10 +277,10 @@
 
                                 <div class="bella-content">
                                     <small>LA BELLA</small>
-                                    <h3>
+                                    <p class="preview-title">
                                         Italian food.<br>
                                         Made with love.
-                                    </h3>
+                                    </p>
 
                                     <div class="fake-button">
                                         View Menu
@@ -237,18 +291,38 @@
                         </div>
 
                         <div class="project-info">
-                            <div>
-                                <p class="project-category">
-                                    Restaurant Website
-                                </p>
+                            <p class="project-category">Restaurant Website</p>
+                            <h3>La Bella Restaurant</h3>
+                            <p class="project-label">Concept project — live demo</p>
 
-                                <h3>La Bella Restaurant</h3>
-                            </div>
+                            <p class="project-summary">
+                                A restaurant website made to feel warm and easy to use,
+                                with a clear path from browsing the menu to making an enquiry.
+                            </p>
+
+                            <dl class="project-details">
+                                <div>
+                                    <dt>Goal</dt>
+                                    <dd>Create a modern restaurant website that makes it easy for visitors to explore the menu and make enquiries.</dd>
+                                </div>
+                                <div>
+                                    <dt>Solution</dt>
+                                    <dd>Designed a responsive restaurant experience with menu categories, a reservation flow, and interactive ordering functionality.</dd>
+                                </div>
+                            </dl>
+
+                            <p class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </p>
 
                             <a href="https://hakimwebsites.github.io/la-bella-restaurant/"
                                target="_blank"
-                               class="project-arrow">
-                                ↗
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                View La Bella project
+                                <span aria-hidden="true">↗</span>
                             </a>
                         </div>
 
@@ -256,17 +330,17 @@
 
 
                     <!-- PROJECT 2 -->
-                    <article class="project">
+                    <article class="project" data-category="restaurant">
 
-                        <div class="project-image kampala">
+                        <div class="project-image kampala" aria-hidden="true">
 
                             <div class="kampala-overlay">
                                 <p>KAMPALA HUB</p>
 
-                                <h3>
+                                <p class="preview-title">
                                     Good food.<br>
                                     Good people.
-                                </h3>
+                                </p>
 
                                 <span>Explore our menu →</span>
                             </div>
@@ -274,35 +348,48 @@
                         </div>
 
                         <div class="project-info">
-                            <div>
-                                <p class="project-category">
-                                    Restaurant Concept
-                                </p>
+                            <p class="project-category">Restaurant Website</p>
+                            <h3>Kampala Hub</h3>
+                            <p class="project-label">Concept project</p>
 
-                                <h3>Kampala Hub</h3>
-                            </div>
+                            <p class="project-summary">
+                                A neighbourhood restaurant concept focused on atmosphere,
+                                food, and a simple invitation to explore the menu.
+                            </p>
 
-                            <span class="project-status">
-                                Concept
-                            </span>
+                            <dl class="project-details">
+                                <div>
+                                    <dt>Goal</dt>
+                                    <dd>Show how a local restaurant can present its mood and menu without clutter.</dd>
+                                </div>
+                                <div>
+                                    <dt>Solution</dt>
+                                    <dd>Used a warm, image-led layout with clear typography and a direct path to the menu.</dd>
+                                </div>
+                            </dl>
+
+                            <p class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </p>
                         </div>
 
                     </article>
 
 
                     <!-- PROJECT 3 -->
-                    <article class="project">
+                    <article class="project" data-category="fitness">
 
-                        <div class="project-image fitforge">
+                        <div class="project-image fitforge" aria-hidden="true">
 
                             <div class="fitforge-content">
 
                                 <span>FITFORGE</span>
 
-                                <h3>
+                                <p class="preview-title">
                                     Train harder.<br>
                                     Become stronger.
-                                </h3>
+                                </p>
 
                                 <div class="fitness-lines">
                                     <i></i>
@@ -315,35 +402,48 @@
                         </div>
 
                         <div class="project-info">
-                            <div>
-                                <p class="project-category">
-                                    Fitness Website
-                                </p>
+                            <p class="project-category">Fitness Website</p>
+                            <h3>FitForge</h3>
+                            <p class="project-label">Concept project</p>
 
-                                <h3>FitForge</h3>
-                            </div>
+                            <p class="project-summary">
+                                A bold fitness brand concept designed to feel energetic
+                                on both desktop and mobile.
+                            </p>
 
-                            <span class="project-status">
-                                Concept
-                            </span>
+                            <dl class="project-details">
+                                <div>
+                                    <dt>Goal</dt>
+                                    <dd>Give a training brand a site that explains the offer quickly and encourages contact.</dd>
+                                </div>
+                                <div>
+                                    <dt>Solution</dt>
+                                    <dd>Built a high-contrast, mobile-friendly layout with strong headlines and a clear visual system.</dd>
+                                </div>
+                            </dl>
+
+                            <p class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </p>
                         </div>
 
                     </article>
 
 
                     <!-- PROJECT 4 -->
-                    <article class="project project-wide">
+                    <article class="project project-wide" data-category="business">
 
-                        <div class="project-image nexora">
+                        <div class="project-image nexora" aria-hidden="true">
 
                             <div class="nexora-content">
 
                                 <p>NEXORA</p>
 
-                                <h3>
+                                <p class="preview-title">
                                     Technology<br>
                                     made simple.
-                                </h3>
+                                </p>
 
                                 <div class="nexora-boxes">
                                     <span></span>
@@ -356,29 +456,45 @@
                         </div>
 
                         <div class="project-info">
+                            <p class="project-category">Business Website</p>
+                            <h3>Nexora</h3>
+                            <p class="project-label">Concept project</p>
 
-                            <div>
-                                <p class="project-category">
-                                    Business Website
-                                </p>
+                            <p class="project-summary">
+                                A clean business-website concept for a technology-style
+                                brand that needs to look organised and trustworthy.
+                            </p>
 
-                                <h3>Nexora</h3>
-                            </div>
+                            <dl class="project-details">
+                                <div>
+                                    <dt>Goal</dt>
+                                    <dd>Present a company clearly, with a layout that is easy to scan on any screen.</dd>
+                                </div>
+                                <div>
+                                    <dt>Solution</dt>
+                                    <dd>Created a simple corporate structure with strong hierarchy and a professional visual system.</dd>
+                                </div>
+                            </dl>
 
-                            <span class="project-status">
-                                Concept
-                            </span>
-
+                            <p class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </p>
                         </div>
 
                     </article>
 
                 </div>
 
+                <p class="filter-empty" id="filterEmpty" hidden>
+                    No projects in this category yet. Browse All to see the current work,
+                    or get in touch if you need a landing page.
+                </p>
 
                 <p class="project-note">
-                    Kampala Hub, FitForge and Nexora are concept projects
-                    created to demonstrate different website styles and industries.
+                    La Bella is a concept project with a live demo. Kampala Hub, FitForge
+                    and Nexora are concept projects created to show different website
+                    styles and industries. They are not paid client work.
                 </p>
 
             </div>
@@ -387,14 +503,14 @@
 
 
         <!-- ABOUT -->
-        <section class="about section" id="about">
+        <section class="about section" id="about" aria-labelledby="about-heading">
 
             <div class="container about-grid">
 
                 <div class="about-title">
                     <p class="eyebrow">A LITTLE ABOUT ME</p>
 
-                    <h2>
+                    <h2 id="about-heading">
                         Good websites don't
                         just look good
                     </h2>
@@ -408,24 +524,26 @@
                     </p>
 
                     <p>
-                        I'm Abdul Hakim Kimera, a web designer and developer focused on
-                        creating websites that are simple, clear and useful.
+                        I'm Abdul Hakim Kimera, a freelance web designer and developer.
+                        I build responsive websites with a focus on clean design,
+                        clear structure, and everyday usability.
                     </p>
 
                     <p>
-                        I care about the small details — spacing, typography,
-                        mobile responsiveness, page speed and the way a visitor
-                        moves through a website.
+                        I work with HTML, CSS, JavaScript, Git/GitHub, and modern
+                        web tools. I also use AI-assisted workflows to move faster
+                        on layout, copy, and code — while still checking, editing,
+                        and owning the final result.
                     </p>
 
                     <p>
-                        My goal isn't to build something that simply looks
-                        impressive. It's to build something that helps your
-                        business communicate better and turn visitors into customers.
+                        I am still growing as a developer, and I am careful about
+                        what I take on. The goal is a website that is easy to use,
+                        looks professional, and helps your business communicate clearly.
                     </p>
 
                     <a href="#contact" class="text-link">
-                        Let's work together →
+                        Let's work together
                     </a>
 
                 </div>
@@ -436,30 +554,28 @@
 
 
         <!-- SKILLS -->
-        <section class="skills section">
+        <section class="skills section" aria-labelledby="skills-heading">
 
             <div class="container">
 
                 <div class="section-heading">
                     <div>
                         <p class="eyebrow">SKILLS</p>
-                        <h2>What I work with</h2>
+                        <h2 id="skills-heading">What I work with</h2>
                     </div>
                 </div>
 
 
-                <div class="skills-list">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Framer</span>
-                    <span>Responsive Design</span>
-                    <span>UI/UX</span>
-                    <span>Git & GitHub</span>
-                    <span>Web Design</span>
-
-                </div>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                    <li>UI/UX</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>Web Design</li>
+                    <li>AI-assisted workflows</li>
+                </ul>
 
             </div>
 
@@ -467,7 +583,7 @@
 
 
         <!-- PROCESS -->
-        <section class="process section">
+        <section class="process section" aria-labelledby="process-heading">
 
             <div class="container">
 
@@ -475,7 +591,7 @@
 
                     <div>
                         <p class="eyebrow">MY PROCESS</p>
-                        <h2>Simple from<br>start to finish</h2>
+                        <h2 id="process-heading">Simple from<br>start to finish</h2>
                     </div>
 
                     <p class="section-intro">
@@ -486,9 +602,9 @@
                 </div>
 
 
-                <div class="process-grid">
+                <ol class="process-grid">
 
-                    <div class="process-item">
+                    <li class="process-item">
                         <span>01</span>
 
                         <h3>Brief</h3>
@@ -497,10 +613,10 @@
                             We discuss your business, goals, audience
                             and what the website needs to achieve.
                         </p>
-                    </div>
+                    </li>
 
 
-                    <div class="process-item">
+                    <li class="process-item">
                         <span>02</span>
 
                         <h3>Design</h3>
@@ -509,10 +625,10 @@
                             I create the structure and visual direction
                             around your brand and audience.
                         </p>
-                    </div>
+                    </li>
 
 
-                    <div class="process-item">
+                    <li class="process-item">
                         <span>03</span>
 
                         <h3>Build</h3>
@@ -521,10 +637,10 @@
                             The design becomes a responsive, functional
                             website that works across devices.
                         </p>
-                    </div>
+                    </li>
 
 
-                    <div class="process-item">
+                    <li class="process-item">
                         <span>04</span>
 
                         <h3>Launch</h3>
@@ -533,9 +649,9 @@
                             After testing everything, your website is
                             ready to go live.
                         </p>
-                    </div>
+                    </li>
 
-                </div>
+                </ol>
 
             </div>
 
@@ -543,36 +659,116 @@
 
 
         <!-- CONTACT -->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contact" aria-labelledby="contact-heading">
 
             <div class="container">
 
                 <div class="contact-box">
 
-                    <p class="eyebrow">HAVE A PROJECT?</p>
+                    <div class="contact-intro">
+                        <p class="eyebrow">HAVE A PROJECT?</p>
 
-                    <h2>
-                        Let's build something
-                        <span>worth remembering</span>
-                    </h2>
+                        <h2 id="contact-heading">
+                            Tell me about
+                            <span>your project</span>
+                        </h2>
 
-                    <p class="contact-description">
-                        Tell me what you're working on and I'll get back
-                        to you with the next steps.
-                    </p>
+                        <p class="contact-description">
+                            Share a few details and I’ll get back to you with
+                            the next steps. There is no automated backend yet —
+                            after you submit, you can send the message by
+                            WhatsApp or email.
+                        </p>
 
-                    <div class="contact-buttons">
-
-                        <a href="https://wa.me/971558311047"
-                           target="_blank"
-                           class="button button-primary">
+                        <a href="#contact-form" class="button button-secondary js-whatsapp-link">
                             Message me on WhatsApp
                         </a>
+                    </div>
 
-                        <a href="mailto:hakimwebsites.ug@gmail.com"
-                           class="button button-secondary">
-                            Send me an email
-                        </a>
+
+                    <div class="contact-form-wrap">
+
+                        <form class="contact-form" id="contactForm" novalidate>
+
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" autocomplete="name" required>
+                                    <p class="field-error" id="name-error" hidden></p>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" autocomplete="email" required>
+                                    <p class="field-error" id="email-error" hidden></p>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="business">Business / company</label>
+                                    <input type="text" id="business" name="business" autocomplete="organization" required>
+                                    <p class="field-error" id="business-error" hidden></p>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="website">Website <span class="optional">(optional)</span></label>
+                                    <input type="url" id="website" name="website" inputmode="url" placeholder="https://">
+                                    <p class="field-error" id="website-error" hidden></p>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="projectType">Project type</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="">Select a project type</option>
+                                    <option value="New Business Website">New Business Website</option>
+                                    <option value="Landing Page">Landing Page</option>
+                                    <option value="Website Redesign">Website Redesign</option>
+                                    <option value="Restaurant Website">Restaurant Website</option>
+                                    <option value="Fitness Website">Fitness Website</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <p class="field-error" id="projectType-error" hidden></p>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <p class="field-error" id="message-error" hidden></p>
+                            </div>
+
+                            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+                            <div class="form-actions">
+                                <button type="submit" class="button button-primary">
+                                    Send project details
+                                </button>
+                            </div>
+
+                        </form>
+
+
+                        <div class="contact-success" id="contactSuccess" hidden>
+                            <h3>Your message is ready</h3>
+                            <p>
+                                This site does not send the form automatically yet.
+                                Use WhatsApp or email below and I’ll reply as soon as I can.
+                            </p>
+
+                            <div class="contact-buttons">
+                                <a class="button button-primary js-whatsapp-link" id="successWhatsApp" href="#contact">
+                                    Send via WhatsApp
+                                </a>
+                                <a class="button button-secondary" id="successEmail" href="mailto:hakimwebsites.ug@gmail.com">
+                                    Send via email
+                                </a>
+                            </div>
+
+                            <button type="button" class="text-link success-reset" id="resetFormButton">
+                                Edit details
+                            </button>
+                        </div>
 
                     </div>
 
@@ -596,18 +792,18 @@
                 </a>
 
                 <p>
-                    Web designer & developer.
+                    Websites for businesses.
                 </p>
             </div>
 
             <div class="footer-right">
 
                 <p>
-                    © 2026 Abduk Hakim Kimera. All rights reserved.
+                    © 2026 Abdul Hakim Kimera. All rights reserved.
                 </p>
 
                 <a href="#home">
-                    Back to top ↑
+                    Back to top
                 </a>
 
             </div>
@@ -615,6 +811,13 @@
         </div>
 
     </footer>
+
+
+    <a class="whatsapp-float js-whatsapp-link" href="#contact" aria-label="Message Hakim on WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M20.5 3.5A11 11 0 0 0 3.2 17.6L2 22l4.5-1.2A11 11 0 0 0 12 23a11 11 0 0 0 8.5-19.5zM12 21a9 9 0 0 1-4.6-1.3l-.3-.2-2.7.7.7-2.6-.2-.3A9 9 0 1 1 12 21zm5-6.7c-.3-.1-1.6-.8-1.8-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.4 7.4 0 0 1-2.2-1.4 8.2 8.2 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.5-.6.1-.2a.5.5 0 0 0 0-.5l-.8-2c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.8 11.8 0 0 0 4.5 4 15 15 0 0 0 1.5.5 3.6 3.6 0 0 0 1.7.1 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c-.1-.1-.3-.2-.5-.2z"/>
+        </svg>
+    </a>
 
 
     <script src="script.js"></script>
