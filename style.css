@@ -2293,6 +2293,16 @@ p {
         font-size: 11px;
     }
 
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
     .project-preview {
         min-height: 230px;
     }
