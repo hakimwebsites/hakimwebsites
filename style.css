@@ -1237,6 +1237,23 @@ p {
     margin-top: 18px;
 }
 
+.about-image {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--surface);
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .skills-grid {
     display: grid;
 
@@ -2146,6 +2163,15 @@ p {
 
     .project-info h3 {
         font-size: 22px;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-image img {
+        height: 380px;
     }
 
     .about-grid {
