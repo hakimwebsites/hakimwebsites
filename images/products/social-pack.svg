@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustrative social media post layouts">
+  <rect width="800" height="600" fill="#E7ECE2"/>
+  <rect x="70" y="110" width="200" height="200" fill="#173F35"/><rect x="90" y="230" width="120" height="14" fill="#F6F1E7"/><rect x="90" y="254" width="80" height="14" fill="#F6F1E7"/><rect x="90" y="134" width="40" height="6" fill="#F6F1E7"/>
+  <rect x="300" y="110" width="200" height="200" fill="#A7B8A0"/><rect x="320" y="230" width="120" height="14" fill="#242824"/><rect x="320" y="254" width="80" height="14" fill="#242824"/><rect x="320" y="134" width="40" height="6" fill="#242824"/>
+  <rect x="530" y="110" width="200" height="200" fill="#242824"/><rect x="550" y="230" width="120" height="14" fill="#F6F1E7"/><rect x="550" y="254" width="80" height="14" fill="#F6F1E7"/><rect x="550" y="134" width="40" height="6" fill="#F6F1E7"/>
+  <rect x="185" y="340" width="200" height="200" fill="#F6F1E7" stroke="#242824" stroke-opacity="0.2"/><rect x="205" y="460" width="120" height="14" fill="#173F35"/><rect x="205" y="484" width="80" height="14" fill="#173F35"/>
+  <rect x="415" y="340" width="200" height="200" fill="#173F35"/><rect x="435" y="460" width="120" height="14" fill="#A7B8A0"/><rect x="435" y="484" width="80" height="14" fill="#A7B8A0"/>
+  <text x="24" y="580" font-family="Arial, sans-serif" font-size="14" fill="#242824" opacity="0.75">SAMPLE PREVIEW — illustrative mockup, not the final product</text>
+</svg>
