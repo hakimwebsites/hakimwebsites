@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustrative wireframe of a one-page business website template">
+  <rect width="800" height="600" fill="#E7ECE2"/>
+  <rect x="110" y="70" width="580" height="450" rx="8" fill="#FFFFFF" stroke="#242824" stroke-opacity="0.2"/>
+  <rect x="110" y="70" width="580" height="34" rx="8" fill="#E7ECE2"/>
+  <circle cx="132" cy="87" r="5" fill="#A7B8A0"/><circle cx="150" cy="87" r="5" fill="#A7B8A0"/><circle cx="168" cy="87" r="5" fill="#A7B8A0"/>
+  <rect x="132" y="120" width="140" height="14" fill="#173F35"/>
+  <rect x="470" y="124" width="50" height="6" fill="#A7B8A0"/><rect x="535" y="124" width="50" height="6" fill="#A7B8A0"/><rect x="600" y="124" width="70" height="14" fill="#173F35"/>
+  <rect x="132" y="190" width="300" height="26" fill="#242824"/><rect x="132" y="228" width="240" height="26" fill="#242824"/>
+  <rect x="132" y="276" width="320" height="8" fill="#A7B8A0"/><rect x="132" y="294" width="280" height="8" fill="#A7B8A0"/>
+  <rect x="132" y="326" width="110" height="34" fill="#173F35"/>
+  <rect x="132" y="400" width="164" height="90" fill="#F6F1E7" stroke="#242824" stroke-opacity="0.2"/><rect x="318" y="400" width="164" height="90" fill="#F6F1E7" stroke="#242824" stroke-opacity="0.2"/><rect x="504" y="400" width="164" height="90" fill="#F6F1E7" stroke="#242824" stroke-opacity="0.2"/>
+  <text x="24" y="580" font-family="Arial, sans-serif" font-size="14" fill="#242824" opacity="0.75">SAMPLE PREVIEW — illustrative mockup, not the final product</text>
+</svg>
