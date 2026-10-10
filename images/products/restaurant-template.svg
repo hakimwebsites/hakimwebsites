@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustrative wireframe of a restaurant website template">
+  <rect width="800" height="600" fill="#E7ECE2"/>
+  <rect x="110" y="70" width="580" height="450" rx="8" fill="#FFFFFF" stroke="#242824" stroke-opacity="0.2"/>
+  <rect x="110" y="70" width="580" height="34" rx="8" fill="#E7ECE2"/>
+  <circle cx="132" cy="87" r="5" fill="#A7B8A0"/><circle cx="150" cy="87" r="5" fill="#A7B8A0"/><circle cx="168" cy="87" r="5" fill="#A7B8A0"/>
+  <rect x="110" y="104" width="580" height="170" fill="#173F35"/>
+  <rect x="150" y="160" width="260" height="24" fill="#F6F1E7"/><rect x="150" y="196" width="180" height="24" fill="#F6F1E7"/><rect x="150" y="236" width="90" height="22" fill="#A7B8A0"/>
+  <rect x="132" y="300" width="120" height="12" fill="#242824"/>
+  <line x1="132" y1="340" x2="668" y2="340" stroke="#242824" stroke-opacity="0.25"/><rect x="132" y="330" width="150" height="8" fill="#A7B8A0"/><rect x="600" y="330" width="60" height="8" fill="#A7B8A0"/>
+  <line x1="132" y1="380" x2="668" y2="380" stroke="#242824" stroke-opacity="0.25"/><rect x="132" y="370" width="190" height="8" fill="#A7B8A0"/><rect x="600" y="370" width="60" height="8" fill="#A7B8A0"/>
+  <line x1="132" y1="420" x2="668" y2="420" stroke="#242824" stroke-opacity="0.25"/><rect x="132" y="410" width="130" height="8" fill="#A7B8A0"/><rect x="600" y="410" width="60" height="8" fill="#A7B8A0"/>
+  <rect x="132" y="446" width="200" height="40" fill="#F6F1E7" stroke="#242824" stroke-opacity="0.2"/><rect x="348" y="446" width="200" height="40" fill="#F6F1E7" stroke="#242824" stroke-opacity="0.2"/>
+  <text x="24" y="580" font-family="Arial, sans-serif" font-size="14" fill="#242824" opacity="0.75">SAMPLE PREVIEW — illustrative mockup, not the final product</text>
+</svg>
