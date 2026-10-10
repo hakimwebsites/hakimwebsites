@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace every YOUR-SITE-URL with your real published address, e.g.
+     https://yourname.github.io/your-repo   (no trailing slash needed in the pattern below).
+     Then you can submit this sitemap in Google Search Console. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://YOUR-SITE-URL/index.html</loc></url>
+  <url><loc>https://YOUR-SITE-URL/shop.html</loc></url>
+  <url><loc>https://YOUR-SITE-URL/privacy.html</loc></url>
+  <url><loc>https://YOUR-SITE-URL/terms.html</loc></url>
+  <url><loc>https://YOUR-SITE-URL/refund-policy.html</loc></url>
+</urlset>
