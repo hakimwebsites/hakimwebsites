@@ -1,0 +1,6 @@
+# robots.txt — allows search engines to crawl the whole site.
+User-agent: *
+Allow: /
+
+# After you publish, replace YOUR-SITE-URL with your real address (and remove the leading "# ")
+# Sitemap: https://YOUR-SITE-URL/sitemap.xml
